@@ -1,4 +1,12 @@
 <compatibility-matrix version="2.0" type="framework">
+   <hal format="hidl" optional="true">
+        <name>vendor.dolby_v3_6.hardware.dms360</name>
+        <version>2.0</version>
+        <interface>
+            <name>IDms</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.biometrics.fingerprint</name>
         <version>2.1</version>
@@ -59,6 +67,13 @@
             <name>IImsStable</name>
             <instance>OplusImsRadio0</instance>
             <instance>OplusImsRadio1</instance>
+        </interface>
+    </hal>
+   <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.osense.client</name>
+        <interface>
+            <name>IOsenseAidlHalReporter</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="aidl" optional="true">
